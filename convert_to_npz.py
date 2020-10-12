@@ -31,7 +31,7 @@ def process_data(img_dims,t):
     
     return  test_data, test_labels
 
-img_dims = 28
+img_dims = 64
 
 train_x, train_y= process_data(img_dims,"train")
 test_x, test_y = process_data(img_dims,"test")
