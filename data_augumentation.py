@@ -55,6 +55,9 @@ def process_data(t, cond,k):
              
 
 #test train *3
+#Third parameter is the value k 
+# k stands for number of extra agumented image created from one original image 
+# so if k is 2 it means from one image we get 2 new agumented images .
 #process_data("test","/NORMAL/",3)
 #process_data("val","/NORMAL/",1)                    
 process_data("train","/NORMAL/",2)                    
