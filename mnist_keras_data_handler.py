@@ -40,11 +40,11 @@ class MnistKerasDataHandler(DataHandler):
         :return: training data
         :rtype: `tuple`
         """
-	#############CHANGED by GEC_BATCH_23
+	###############################CHANGED by GEC_BATCH_23########################################
         num_classes = 1
         img_rows, img_cols = 64,64
-        the if else condition was removed
-        ############
+       # the if else condition was removed
+        #############################################################################################
         try:
             logger.info('Loaded training data from ' + str(self.file_name))
             data_train = np.load(self.file_name)
@@ -67,7 +67,7 @@ class MnistKerasDataHandler(DataHandler):
         print('x_train shape:', x_train.shape)
         print(x_train.shape[0], 'train samples')
         print(x_test.shape[0], 'test samples')
-############## commented y_train and y_test
+############## commented y_train and y_test###############################################
         # convert class vectors to binary class matrices
         #y_train = np.eye(num_classes)[y_train]
         #y_test = np.eye(num_classes)[y_test]
